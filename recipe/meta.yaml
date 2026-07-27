@@ -1,5 +1,5 @@
 {% set name = "scanpy" %}
-{% set version = "1.12.2" %}
+{% set version = "1.12.3" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 67629ea2989a790a946251ee2bd05186aedbfae9fef998a51506dcfe99dce84c
+  sha256: 46de2ee85d39a06d24843447d09f046de57da51e3bf1af2e44d76707493bdf33
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - anndata >=0.10.8
     - numpy >=2
     - fast-array-utils >=1.4
-    - matplotlib-base >=3.10,!=3.11.0rc1,!=3.11.0rc2,!=3.11
+    - matplotlib-base >=3.10
     - pandas >=2.3
     - scipy >=1.13
     - seaborn >=0.13.2
