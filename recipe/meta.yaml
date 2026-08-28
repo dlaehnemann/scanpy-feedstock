@@ -1,13 +1,13 @@
 {% set name = "scanpy" %}
-{% set version = "1.12.3" %}
+{% set version = "1.12.4" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 46de2ee85d39a06d24843447d09f046de57da51e3bf1af2e44d76707493bdf33
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b87a5b1413ab33b69691df69c2084ff4ea8b389728e1542b22145825f88b5037
 
 build:
   noarch: python
